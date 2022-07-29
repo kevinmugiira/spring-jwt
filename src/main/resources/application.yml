@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jwtimpl
+    username: root
+    password: Rootroot@1045
+
+  sql:
+    init:
+      continue-on-error: true
+
+  jpa:
+#    generate-ddl: true
+    hibernate:
+      ddl-auto: create #this drops all tables and creates new ones again during startup
+
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true  #for formatting the sql logs that are displayed using the SQL4F annotation
+
+
+#  batch:
+#    job:
+#      enabled: false
+
+
+
+
+
+
+
+
+
